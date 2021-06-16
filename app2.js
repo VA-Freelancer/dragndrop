@@ -12,6 +12,7 @@ for (const placeholder of placeholders) {
 	placeholder.addEventListener('dragenter', dragenter)
 	placeholder.addEventListener('dragleave', dragleave)
 	placeholder.addEventListener('drop', dropdrop)
+
 }
 
 function dragstart(event) {
@@ -38,6 +39,6 @@ function dragleave(event) {
 }
 function dropdrop(event) {
 	event.target.classList.remove('hovered')
-	console.log(itemDragging)
 	event.target.append(itemDragging)
+
 }
